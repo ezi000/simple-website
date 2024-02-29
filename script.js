@@ -2,7 +2,24 @@ const dni = document.getElementById("dni");
 const godziny = document.getElementById("godziny");
 const minuty = document.getElementById("minuty");
 const sekundy = document.getElementById("sekundy");
-let nowyRok = new Date("01-01-2025");
+
+
+function updateYear() {    
+    let nowyRok = new Date();
+    nowyRok.setMonth(0);
+    nowyRok.setDate(1);
+    var currentYear = nowyRok.getFullYear();
+    var nextYear = currentYear + 1;
+    return nowyRok.setFullYear(nextYear);
+}
+
+
+updateYear();
+
+
+
+
+
 
 function odliczanie() {
   let data = new Date();
