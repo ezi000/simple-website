@@ -2,7 +2,7 @@ const dni = document.getElementById("dni");
 const godziny = document.getElementById("godziny");
 const minuty = document.getElementById("minuty");
 const sekundy = document.getElementById("sekundy");
-let nowyRok = new Date("01-01-2024");
+let nowyRok = new Date("01-01-2025");
 
 function odliczanie() {
   let data = new Date();
