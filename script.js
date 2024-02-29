@@ -5,23 +5,15 @@ const sekundy = document.getElementById("sekundy");
 
 
 function updateYear() {    
-    let nowyRok = new Date();
-    nowyRok.setMonth(0);
-    nowyRok.setDate(1);
-    var currentYear = nowyRok.getFullYear();
+    let rok = new Date();
+    var currentYear = rok.getFullYear();
     var nextYear = currentYear + 1;
-    return nowyRok.setFullYear(nextYear);
+     return new Date(nextYear, 0, 1);
 }
 
 
-updateYear();
-
-
-
-
-
-
 function odliczanie() {
+    let nowyRok = updateYear();
   let data = new Date();
 
   let roznicaDat = nowyRok - data;
